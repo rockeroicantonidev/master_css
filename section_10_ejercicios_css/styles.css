@@ -1,0 +1,178 @@
+/*
+(hecho)1. Crear document HTML y vincularlo con un CSS
+(hecho)2. Crear estructura HTML que cuente: contenedor general, cabecera, barra lateral, seccion de conteido principal, elementos dentro del contenendor principal, footer
+(hecho)3. Todo el contenido dentro del contenedor general, ancho 1200px, estar centrado
+(hecho)4. Header 100% del ancho, texto grande centrado
+(hecho)5. Menu debe tener los elementos uno al lado del otro
+(hecho)6. El contenido principal ancho de 70%
+(hecho)7. El contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas
+(hecho)8. Barra lateral debe tener un ancho del 30%
+9. Footer debe tener un ancho del 100% del div que lo contiene y estar abajo de todo
+*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+  width: 1200px;
+  /*con margin se puede centrar un elemento div*/
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+#header{
+  width: 100%;
+  height: 100px;
+  background: rgb(21, 155, 195);
+  color: white;
+  text-align: center;
+  line-height: 90px;
+}
+
+.clearfix{
+  float: none;
+  clear: both;
+}
+
+#menu{
+  background-color: #eee;
+}
+
+#menu ul li{
+  /*varias formas de hacerlo*/
+  /*display: inline-block;*/
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+  display: block;
+  padding: 15px;
+  color: #444;
+}
+
+#menu ul li:hover{
+  background: rgb(26, 133, 166);
+  cursor: pointer;
+}
+
+#menu ul li:hover a{
+  color: white;
+}
+
+#contenido{
+  width: 69%;
+  /*border: 1px solid green;*/
+  float: left;
+}
+
+#lateral{
+  width: 30%;
+  border: 1px solid red;
+  float: left;
+  min-height: 500px;
+  max-height: 650px;
+  text-align: center;
+  /*Posicionamiento*/
+  /*overflow te permite manipula la visibilidad de un contenido de una caja: visible (default, muestra contenido aunque se salga), hidden (oculta contenido), scroll(barras de desplazamiento para el contenido)*/
+  overflow-y: scroll;
+}
+
+#contenido > h1{
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  color: #444;
+  /*Sombra a texto, text-shadow: eje x, eje y, difuminado, color*/
+  text-shadow: 1px 1px 2px gray;
+}
+
+#contenido .caja{
+  /*Posicionamiento*/
+  /*position: relative (default, respeta todo lo que hicimos anteriormente), absolute (manda todo a una solo posicion)*/
+  position: relative;
+  width: 40%;
+  height: 250px;
+  /*background-color: red;
+  border: 5px solid blue;*/
+  background-color: #ccc;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 200px;
+  color: #444 !important;
+  text-transform: uppercase;
+  /*sombra a caja*/
+  box-shadow: 5px 5px 10px black;
+
+  color: white;
+  float: left;
+  margin: 20px;
+  /*Aqui metemos un margen adicional de lado izquierdo*/
+  margin-left: 40px;
+  /*Borde redondeado*/
+  border-radius: 50px 10px 4px 61px;
+}
+
+.sombra-interior{
+  /*Propiedad inset es sobra por dentro*/
+  box-shadow: 5px 5px 10px gray inset !important;
+  border-radius: 999px !important;
+}
+
+footer{
+  width: 100%;
+  background-color: #eee;
+  text-align: center;
+  color: #444;
+  height: 55px;
+  line-height: 55px;
+  border-top: 1px solid #ccc;
+}
+
+/*Posicionamiento*/
+.libre{
+  /*Mover la caja en alguna ubicacion de la pantalla modificando top y position:absolute*/
+  position: absolute;
+  top: 300px;
+  /*left: 50%;*/
+  right: 50%;
+
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+}
+
+.libre1{
+  /*z-index indica la capa en la que se encuentra un elemento, siendo 1 la principal y el inicio, incrementandose hacia arriba*/
+  z-index: 2;
+}
+
+.libre2{
+  background-color: green;
+  top: 280px;
+  right: 53%;
+  z-index: 3;
+}
+
+.fija{
+  /*position:fixed es como absolute, la diferencia es que este elemento acompaña al scroll de la pagina*/
+  position: fixed;
+  top: 50%;
+  left: 0px;
+
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+}

@@ -1,0 +1,302 @@
+/*Fonts*/
+@font-face{
+  font-family: "RobotoRegular";
+  src: url(assets/fonts/Roboto-Regular.ttf);
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face{
+  font-family: "RobotoBold";
+  src: url(assets/fonts/Roboto-Bold.ttf);
+  font-weight: bold;
+  font-style: bold
+}
+
+/*Main Container*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "RobotoRegular";
+}
+
+body{
+  background-color: hsl(234, 29%, 20%);
+}
+
+#app{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding-top: 150px;
+  padding-bottom: auto;
+}
+/*Main Container*/
+
+/*General*/
+.dashboard-titles{
+  font-weight: bold;
+  font-family: "RobotoBold";
+}
+
+.dashboard-buttons{
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px 10px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  background-color: hsl(234, 29%, 20%);
+  transition: all 300ms;
+}
+
+.dashboard-buttons:hover{
+  background-color: hsl(4, 100%, 67%);
+}
+/*General*/
+
+/*Main Design*/
+#start_form{
+  display: grid;
+  grid-template-columns: 48% 45%;
+  place-self: center;
+
+  width: 900px;
+  background-color: white;
+  border-radius: 30px 30px;
+  /*
+  border-top-left-radius: 30px 30px;
+  border-top-right-radius: 30px 30px;
+  border-bottom-left-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;*/
+
+}
+
+.top-form-section{
+  display: none;
+}
+
+.left-form-section{
+  padding: 25px;
+  padding-top: 90px;
+  padding-left: 75px;
+  padding-right: 0px;
+}
+
+.left-form-section h1{
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.left-form-section p{
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.left-form-section ul{
+  text-decoration: none;
+}
+
+.list-bullet{
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+#email-submit{
+  display: grid;
+  grid-template-rows: 20% 40% 40%;
+  margin-top: 45px;
+}
+
+/*#email-submit label{
+  font-family: "RobotoBold";
+  font-size: small;
+}*/
+
+/*TODO: arreglar error states*/
+.email-labels-group{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.email-submit-label{
+  font-family: "RobotoBold";
+  font-size: small;
+}
+
+.email-submit-label-error{
+  color: hsl(4, 100%, 67%);
+}
+
+#email-submit input{
+  height: 50px;
+  border-radius: 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 15px;
+}
+
+.email-submit{
+  border-color: grey;
+}
+
+.email-submit-error{
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsl(19, 100%, 89%);
+  color: hsl(4, 100%, 67%);
+}
+
+/*#email-submit button{
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 10px 10px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  background-color: hsl(234, 29%, 20%);
+  transition: all 300ms;
+}*/
+
+#email-submit button:hover{
+  background-color: hsl(4, 100%, 67%);
+}
+
+.right-form-section{
+  padding: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.right-form-section img{
+  height: 580px;
+}
+/*Main Design*/
+
+/*Suscription Alert*/
+#confirmation_dialog{
+  place-self: center;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px 30px;
+  padding: 50px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+#confirmation_dialog img{
+  height: 45px;
+  margin-bottom: 25px;
+}
+
+#confirmation_dialog h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#confirmation_dialog p{
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+#confirmation_dialog button{
+  width: inherit;
+  margin-bottom: 25px;
+}
+
+.email-user-style{
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "RobotoBold";
+  color: black;
+}
+
+/*Suscription Alert*/
+
+/*Responsive*/
+@media (max-width: 375px){
+  #app{
+    padding-top: 0px;
+  } 
+
+  #start_form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 36% auto;
+    place-self: center;
+  
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px 30px;
+    /*
+    border-top-left-radius: 30px 30px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;*/
+  }
+
+  .top-form-section{
+    display: block;
+  }
+
+  .right-form-section{
+    display: none;
+  }
+
+  .left-form-section{
+   padding: 30px;
+  }
+
+  .left-form-section-info{
+    padding-right: 21px;
+  }
+
+  .left-form-section h1{
+    font-size: 40px;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+  #email-submit{
+    margin-bottom: 45px;
+  }
+
+  #confirmation_dialog{
+    display: grid;
+    place-self: center;
+    width: 92%;
+    padding: 0px;
+    padding-left: 30px;
+    background-color: white;
+    height: 100%;
+    border-radius: 0px 0px;
+  }
+
+  #confirmation_dialog img{
+    margin-top: 165px;
+    height: 65px;
+  }
+
+  #confirmation_dialog h1{
+    font-size: 38px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  #confirmation_dialog p{
+    font-size: 17px;
+    padding-right: 30px;
+    margin-bottom: 250px;
+  }
+
+  #confirmation_dialog button{
+    margin-bottom: 25px;
+  }
+
+}

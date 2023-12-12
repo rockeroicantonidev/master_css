@@ -1,0 +1,54 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+  font-size: 20px;
+}
+
+/*pseudoclases*/
+ul li:first-child{
+  color: purple;
+  font-weight: bold;
+}
+
+ul li:nth-child(2){
+  color: orange;
+  font-weight: bold;
+}
+
+ul li:last-child{
+  color: gray;
+  font-weight: bold;
+}
+
+#enlace{
+  font-size: 30px;
+  color: lightsalmon;
+}
+
+#enlace:link{
+  color: red;
+}
+
+#enlace:visited{
+  color: orangered;
+}
+
+#enlace:hover{
+  color: blue;
+}
+
+#enlace:active{
+  color: green;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+
+input[type="text"]{
+  margin-top: 20px;
+  padding: 10px;
+}
+
+input[type="text"]:focus{
+  border: 4px dashed red;
+}

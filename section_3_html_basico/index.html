@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primera web</title>
+</head>
+<body>
+  <h1>Titulo de mi web</h1>
+  <h2>Bienvenidos a mi Web</h2>
+  <!--Parrafo-->
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper nibh vitae mauris sagittis, quis rutrum arcu elementum. Integer posuere arcu id mauris tincidunt dignissim. Ut sagittis, tellus vel placerat aliquet, augue elit posuere eros, ac porttitor urna ante malesuada tortor. Proin tempor consequat ligula quis sollicitudin. Sed et purus ullamcorper urna consequat vehicula ut imperdiet enim. Maecenas bibendum felis vel consectetur blandit. Quisque pulvinar maximus vehicula. Nulla convallis nunc et placerat tempus. Praesent ornare massa ornare orci feugiat, in condimentum augue condimentum. Quisque malesuada, lorem sed sagittis eleifend, eros sapien euismod mauris, in sodales tellus augue vel ligula. Etiam facilisis velit rhoncus turpis dapibus elementum. Aenean rhoncus varius ornare.
+  </p>
+  <p>
+    Suspendisse potenti. Duis cursus blandit ultrices. Nam sit amet sapien imperdiet, dapibus odio vel, interdum est. Vestibulum quis dignissim nisi. Ut id fermentum orci. Duis commodo nec ligula quis accumsan.<br/> Mauris aliquet ac nisi quis euismod. Nullam mattis blandit pellentesque. Integer turpis elit, elementum mollis cursus et, vestibulum at libero. Ut pulvinar lectus lorem, vel mattis sapien ullamcorper a. Suspendisse potenti. Quisque ultricies felis et tortor pretium auctor. Etiam malesuada fringilla diam eu tempor. Vivamus rhoncus tellus at diam tristique, sed porta orci feugiat. Suspendisse urna diam, consectetur eget iaculis at, volutpat a ex.
+  </p>
+  <!--Separados-->
+  <hr/>
+    <h2>Imagenes en HTML</h2>
+    <img alt="México 1" title="Monumento a los Niños Héroes" src="images/mexico_1.jpg" width="455px" height=""/>
+
+  <hr/>
+  <h3>
+    Tercer encabezado
+  </h3>
+  <p>
+    <strong>varius natoque penatibus et magnis dis parturient montes,</strong> nascetur ridiculus mus. Fusce finibus in mauris eget euismod. Phasellus rutrum sapien a nisi ornare accumsan. In odio diam, eleifend in lobortis vel, <em>dignissim in mauris. Sed sit amet commodo nunc.</em> Etiam id leo congue, commodo nulla in, fermentum ante. Integer vulputate commodo faucibus. In hac habitasse platea dictumst. Mauris aliquam massa et urna vulputate, eget euismod tortor aliquam. Suspendisse condimentum, enim non mollis consectetur, orci magna molestie metus, eu condimentum leo massa efficitur mi. Proin luctus nisl id dignissim faucibus. Quisque condimentum aliquam lectus quis cursus. Mauris placerat dolor eu mauris viverra tincidunt. Praesent consequat, erat convallis placerat sagittis, <span id="resaltado" class="rojo amarillo">nisl felis imperdiet nisl, id finibus nisl velit sed sem.</span> <i>Proin quis ipsum at erat vulputate porta sed quis augue</i>.
+
+    <blockquote>
+      Texto en forma de cita
+    </blockquote>
+  </p>
+
+  <h3>Listado de frutas</h3>
+  <!--Listas-->
+  <ol>
+    <li>Manzana
+      <ul>
+        <li>Roja</li>
+        <li>Verde</li>
+      </ul>
+    </li>
+    <li>Naranja</li>
+    <li>Pera</li>
+    <li>Sandía</li>
+  </ol>
+
+  <ul>
+    <li>Manzana</li>
+    <li>Naranja</li>
+    <li>Pera</li>
+    <li>Sandía</li>
+  </ul>
+
+  <h3>Tablas</h3>
+  <table border="1">
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Pais</th>
+    </tr>
+    <tr>
+      <td>Jorge</td>
+      <td>Moreno</td>
+      <td>México</td>
+    </tr>
+    <tr>
+      <td>Miguel</td>
+      <td colspan="2">Delgado</td>
+    </tr>
+  </table>
+
+  <h3>Formulario</h3>
+  <!--<form action="direccion a enviar" method="metodo http para mandar la info">-->
+  <form>
+    <p>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="nombre" placeholder="Escribe tu nombre"/>
+    </p>
+    <p>
+      <label for="descripcion">Descripción</label>
+      <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+    </p>
+    <p>
+      <input type="radio" name="genero" value="hombre"> Hombre <br/>
+      <input type="radio" name="genero" value="mujer"> Mujer <br/>
+      <input type="radio" name="genero" value="no_especificado"> Sin Especificar <br/>
+
+      <select name="genero_2" id="">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="no_especificado">Nada</option>
+      </select>
+    </p>
+    <input type="submit" value="Enviar formulario">
+  </form>
+
+</body>
+</html>

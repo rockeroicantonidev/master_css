@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cajas en CSS</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Cajas en CSS</h1>
+
+  <!--Elementos flotados-->
+  <section id="cajas">
+    <div class="caja" id="caja1">
+      <p>
+        Contenido Caja 1
+      </p>
+    </div>
+  
+    <div class="caja" id="caja2">
+      <p>
+        Contenido Caja 2
+      </p>
+    </div>
+
+    <!--
+    <h2 class="caja">Caja 3</h2>
+    <h2 class="caja">Caja 4</h2>
+    -->
+
+    <div class="caja" id="caja1">
+      <p>
+        Contenido Caja 3
+      </p>
+    </div>
+    <div class="caja" id="caja2">
+      <p>
+        Contenido Caja 4
+      </p>
+    </div>
+    <div class="caja" id="caja1">
+      <p>
+        Contenido Caja 5
+      </p>
+    </div>
+    <div class="caja" id="caja2">
+      <p>
+        Contenido Caja 6
+      </p>
+    </div>
+    <div class="caja" id="caja1">
+      <p>
+        Contenido Caja 7
+      </p>
+    </div>
+    <div class="caja" id="caja2">
+      <p>
+        Contenido Caja 8
+      </p>
+    </div>
+    <!--Para detectar que section tiene contenido-->
+    <div class="clear_fix"></div>
+  </section>
+  
+  <!--Elementos no flotados, que se mantengan abajo-->
+  <div class="clear_fix">
+
+  </div>
+  <h2>Contenido despues de las cajas posicionadas</h2>
+  <p>Texto de prueba</p>
+
+</body>
+</html>
